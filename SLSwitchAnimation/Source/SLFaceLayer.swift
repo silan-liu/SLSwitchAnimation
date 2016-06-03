@@ -15,7 +15,7 @@ class SLFaceLayer: CALayer {
     
     private let leftEyeXRatio: CGFloat = 0.2
     
-    var isOn: Bool = true   
+    var isOn: Bool = true
     
     // when isOn is ture, mouthOffset = mouthLength
     var mouthOffset: CGFloat = 0

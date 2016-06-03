@@ -169,8 +169,6 @@ class SLSwitchView: UIButton {
         
         animation.duration = 0.5
         animation.values = [faceLayer.position.x - faceLayer.frame.size.width, faceLayer.position.x + faceLayer.frame.size.width / 6, faceLayer.position.x]
-        animation.fillMode = kCAFillModeForwards;
-        animation.removedOnCompletion = false
         animation.delegate = self
         animation.setValue("moveBackAnimation", forKey: "animation")
         
@@ -183,8 +181,6 @@ class SLSwitchView: UIButton {
         
         animation.duration = 0.5
         animation.values = [faceLayer.position.x + faceLayer.frame.size.width, faceLayer.position.x - faceLayer.frame.size.width / 6, faceLayer.position.x]
-        animation.fillMode = kCAFillModeForwards;
-        animation.removedOnCompletion = false
         animation.delegate = self
         animation.setValue("moveBackAnimation", forKey: "animation")
         
@@ -198,8 +194,6 @@ class SLSwitchView: UIButton {
         animation1.duration = 0.5
         animation1.fromValue = on ? offset : 0
         animation1.toValue = on ? 0 : offset
-        animation1.removedOnCompletion = false
-        animation1.fillMode = kCAFillModeForwards;
 
         faceLayer.addAnimation(animation1, forKey: "mouthAnimation")
     }
